@@ -211,4 +211,8 @@ body{
 .gear-card h3 {
   font-size: 1rem;
   margin-bottom: .4rem;
+
+}
+.main-nav.open {
+  display: flex;
 }
