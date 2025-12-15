@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KasiCarLovers — Community</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><img src="images/kcl.jpg" alt="logo" class="logo"/><span class="site-title">KASICAR<span>LOVERS</span></span></a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="videos.html">Videos</a>
+          <a href="community.html" class="active">CPM Arena</a>
+          <a href="garage.html">Community</a>
+          <a href="gear.html">Gear</a>
+          <a href="about.html">About</a>
+        </nav>
+        <div class="right-actions">
+          <a class="social" href="https://tiktok.com/@kasicarlovers2" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2v10.5A4.5 4.5 0 1 1 9 8V9.6A6 6 0 1 0 18 15.6V7h-2v-5z"/></svg></a>
+          <button class="hamburger" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="section dark">
+      <div class="container">
+        <h2>Community Showcase</h2>
+        <div class="grid cols-3">
+          <div class="card">
+            <h3>Best Build of the Week</h3>
+            <div class="thumb" style="background-image:url('images/bestft.jpg')"></div>
+            <div class="card-actions">
+              <button id="communityVoteBtn" class="btn primary">Vote</button>
+              <button id="communitySubmitBtn" class="btn ghost">Submit</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Upcoming CPM Meets</h3>
+            <ul id="meetsList" class="muted small-list"></ul>
+            <ul>@ASC//Lukakufeng knows when ask him</ul>
+          </div>
+
+          <div class="card">
+            <h3>Community Leaderboard</h3>
+            <ol id="leaderboard" class="muted small-list"></ol>
+            <ul>@ASC//Lukakufeng</ul>
+          </div>
+        </div>
+
+        <section class="section">
+          <h3>Challenge Feed</h3>
+          <div class="grid cols-3">
+            <div class="card"><div class="thumb" style="background-image:url('images/speedcar.jpg')"></div><h4>April Speed Challenge</h4><a href="speed-challenge.html" class="btn primary small" href="#">Enter Now</a></div>
+            <div class="card"><div class="thumb" style="background-image:url('images/driftmode.jpg')"></div><h4>Best Drift Livery</h4><a href="drift-livery.html" class="btn primary small" href="#">Enter</a></div>
+            <div class="card"><div class="thumb" style="background-image:url('images/rcarr.jpg')"></div><h4>Creative Paints</h4><a href="creative-paints.html" class="btn primary small" href="#">See</a></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year-community"></span> KasicarLovers — All rights reserved</div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

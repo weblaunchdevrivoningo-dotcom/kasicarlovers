@@ -1,0 +1,214 @@
+/* style.css - Dark modern design with orange accents */
+
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background:#070707;color:#e8e8e8;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+}
+
+/* Containers */
+.container{max-width:1200px;margin:0 auto;padding:1rem}
+.center{text-align:center}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:60;background:linear-gradient(180deg, rgba(10,10,10,0.95), rgba(10,10,10,0.88));border-bottom:1px solid rgba(255,255,255,0.03)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.9rem 0}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:inherit}
+.logo{width:44px;height:44px;border-radius:8px;object-fit:cover}
+.site-title{font-weight:800;letter-spacing:1px}
+.site-title span{color:#ff7a18}
+.main-nav{display:flex;gap:1rem;align-items:center}
+.main-nav a{color:#ddd;text-decoration:none;padding:.35rem .6rem;border-radius:6px;transition:.15s}
+.main-nav a:hover,.main-nav a.active{color:#ff7a18;background:rgba(255,122,24,0.06)}
+.right-actions{display:flex;align-items:center;gap:.6rem}
+.icon{width:22px;height:22px;color:#fff}
+.hamburger{display:none;background:transparent;border:0;color:#fff;font-size:1.05rem}
+
+/* Hero */
+.hero{min-height:60vh;background-size:cover;background-position:center;position:relative;display:flex;align-items:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.35),rgba(0,0,0,0.7))}
+.hero-inner{position:relative;z-index:2;max-width:900px;padding:3rem 1rem}
+.hero h1{font-size:2.1rem;line-height:1.02;font-weight:900;letter-spacing:1px}
+.hero h1 span{display:block;color:#ff7a18;font-weight:800;font-size:1rem;margin-top:.3rem}
+.lead{color:rgba(230,230,230,0.82);margin:.7rem 0 1.2rem}
+
+/* Buttons */
+.btn{display:inline-block;padding:.6rem 1rem;border-radius:10px;text-decoration:none;font-weight:700;cursor:pointer;border:0}
+.btn.small{padding:.45rem .7rem;font-size:.88rem}
+.btn.primary{background:linear-gradient(90deg,#ff7a18,#ff3c3c);color:#060606}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff}
+.btn.secondary{background:rgba(255,255,255,0.04);color:#fff}
+
+/* Sections & cards */
+.section{padding:3rem 0}
+.section.dark{background:linear-gradient(180deg,#0b0b0b,#0f0f0f);border-top:1px solid rgba(255,255,255,0.02);border-bottom:1px solid rgba(255,255,255,0.02)}
+.grid{display:grid;gap:1rem}
+.cols-3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:992px){.cols-3{grid-template-columns:1fr}}
+.card{background:#0f0f0f;border-radius:12px;padding:1rem;border:1px solid rgba(255,255,255,0.03);box-shadow:0 10px 30px rgba(0,0,0,0.5)}
+.highlight-card .thumb{height:150px;border-radius:10px;background-size:cover;background-position:center;margin:.5rem 0}
+.thumb{height:160px;border-radius:10px;background-size:cover;background-position:center;}
+
+/* Highlights */
+.highlights .card h3{margin-bottom:.6rem}
+.card-actions{display:flex;gap:.6rem;margin-top:.6rem}
+
+/* Video grid */
+.videos-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:1.5rem;
+  margin-top:1.5rem;
+}
+
+/* Tablet */
+@media (max-width:1024px){
+  .videos-grid{
+    grid-template-columns:repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width:600px){
+  .videos-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.video-card{
+  background:#111;
+  padding:12px;
+  border-radius:14px;
+}
+
+.video-card video{
+  width:100%;
+  aspect-ratio:16 / 9;     /* perfect rectangle */
+  object-fit:contain;      /* SHOW FULL THUMB */
+  background:#000;
+  border-radius:12px;
+  display:block;
+}
+
+.video-card h3{
+  margin-top:.6rem;
+  font-size:.95rem;
+}
+
+/* Gallery */
+.gallery{display:flex;gap:.6rem;overflow-x:auto;padding:.6rem 0}
+.gallery.preview .thumb{min-width:280px;height:160px;flex-shrink:0}
+.gallery .thumb{min-width:220px;height:140px;flex-shrink:0;cursor:zoom-in;transition:transform .18s}
+.gallery .thumb:hover{transform:translateY(-6px)}
+
+/* About / founders */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:1.2rem;align-items:start}
+.founder{display:flex;gap:.8rem;align-items:center}
+.founder img{width:72px;height:72px;object-fit:cover;border-radius:10px}
+
+/* Footer */
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1rem 0;text-align:center;color:rgba(255,255,255,0.6);margin-top:1.5rem}
+.footer-inner{display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.foot-links a{color:rgba(255,255,255,0.7);text-decoration:none;padding:.25rem .4rem;border-radius:6px}
+.foot-links a:hover{color:#ff7a18}
+
+/* small helpers */
+.muted{color:rgba(220,220,220,0.72)}
+.small-list{list-style:none;padding-left:0}
+.small-list li{margin:.4rem 0}
+
+/* responsive */
+@media (max-width:900px){
+  .main-nav{display:none}
+  .hamburger{display:block}
+  .hero-inner{padding:2rem}
+  .hero h1{font-size:1.4rem}
+  .about-grid{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column;gap:.6rem}
+}
+/* ------------------------------
+   MOBILE FIXES
+------------------------------ */
+@media (max-width: 600px) {
+
+  .videos-grid {
+      grid-template-columns: 1fr !important;
+      gap: 18px;
+      padding: 10px;
+  }
+
+  .video-card {
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  .video-card video,
+  .video-card img {
+      width: 100%;
+      border-radius: 10px;
+  }
+
+  h2 {
+      font-size: 1.4rem;
+      text-align: center;
+  }
+
+  .page-title {
+      font-size: 1.8rem;
+  }
+
+  .site-header .logo {
+      width: 45px;
+  }
+
+  .main-nav {
+      display: none;
+      flex-direction: column;
+      gap: 15px;
+      background: #111;
+      padding: 15px;
+      text-align: center;
+  }
+
+  .hamburger {
+      font-size: 1.8rem;
+      padding: 5px 10px;
+  }
+}
+
+
+/* LIGHTBOX MOBILE FIX */
+.lightbox video,
+.lightbox iframe {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 10px;
+}
+.video-card video {
+    max-width: 100%;
+    max-height: 260px;   /* ← THIS controls normal size */
+    border-radius: 10px;
+    object-fit: contain;
+}
+/* GEAR PAGE */
+.gear-grid {
+  margin-top: 1.5rem;
+}
+
+.gear-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: .6rem;
+}
+
+.gear-card h3 {
+  font-size: 1rem;
+  margin-bottom: .4rem;
+}

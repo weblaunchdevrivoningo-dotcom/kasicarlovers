@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>KasiCarLovers — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="KasiCarLovers - bridging Car Parking Multiplayer and South African car culture" />
+</head>
+<body>
+  <div class="site">
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/kcl.jpg" alt="KasiCarLovers logo" class="logo" />
+          <span class="site-title">KASICAR<span>LOVERS</span></span>
+        </a>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="videos.html">Videos</a>
+          <a href="community.html">CPM Arena</a>
+          <a href="garage.html">Community</a>
+          <a href="gear.html">Gear</a>
+          <a href="about.html">About</a>
+        </nav>
+
+        <div class="right-actions">
+          <a class="social" href="https://tiktok.com/@kasicarlovers2" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2v10.5A4.5 4.5 0 1 1 9 8V9.6A6 6 0 1 0 18 15.6V7h-2v-5z"/></svg>
+          </a>
+          <button class="hamburger" aria-expanded="false" aria-label="Toggle menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" style="background-image:url('images/mgol7r.jpg')">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <h1>FROM CAR PARKING MULTIPLAYER<br><span>TO THE STREETS OF SOUTH AFRICA</span></h1>
+        <p class="lead">Connecting virtual builds & meets with real South African car culture — videos, community challenges and garage showcases.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="videos.html">Watch Latest</a>
+          <a class="btn ghost" href="community.html">Join the CPM Crew</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section class="section highlights">
+      <div class="container">
+        <div class="grid cols-3">
+          <div class="card highlight-card">
+            <h3>🔥 Best Build of the Week</h3>
+            <div class="thumb" style="background-image:url('images/bestft.jpg')"></div>
+            <div class="card-actions">
+              <button id="homeVoteBtn" class="btn primary small">Vote</button>
+              <a class="btn ghost small" href="community.html">Submit Build</a>
+            </div>
+          </div>
+
+          <div class="card highlight-card">
+            <h3>📅 Upcoming CPM Meets</h3>
+            <div id="homeMeets" class="muted"></div>
+          </div>
+
+          <div class="card highlight-card">
+            <h3>🏆 Community Leaderboard</h3>
+            <ol id="homeLeaderboard" class="muted small-list"></ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GARAGE PREVIEW -->
+    <section class="section dark">
+      <div class="container">
+        <h2>Garage of Fame</h2>
+        <p class="muted">A gallery of the finest community builds.</p>
+        <div class="gallery preview">
+          <div class="thumb" style="background-image:url('images/bestft.jpg')"></div>
+          <div class="thumb" style="background-image:url('images/rcarr.jpg')"></div>
+          <div class="thumb" style="background-image:url('images/mgol7r.jpg')"></div>
+        </div>
+        <div class="center"><a class="btn secondary" href="garage.html">Open Full Gallery</a></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year-home"></span> KasicarLovers — All rights reserved</div>
+        <div class="foot-links">
+          <a href="https://tiktok.com/@kasicarlovers2" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

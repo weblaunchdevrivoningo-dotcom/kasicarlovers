@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Creative Paints — KasicarLovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site">
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html"><img src="images/kcl.jpg" alt="logo" class="logo"/><span class="site-title">KASICAR<span>LOVERS</span></span></a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="videos.html">Videos</a>
+          <a href="community.html">CPM Arena</a>
+          <a href="garage.html">Community</a>
+          <a href="gear.html">Gear</a>
+          <a href="about.html">About</a>
+        </nav>
+        <div class="right-actions">
+          <a class="social" href="https://tiktok.com/@kasicarlovers2" target="_blank" rel="noopener noreferrer"><svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2v10.5A4.5 4.5 0 1 1 9 8V9.6A6 6 0 1 0 18 15.6V7h-2v-5z"/></svg></a>
+          <button class="hamburger" aria-expanded="false">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="hero" style="background-image:url('images/rcarr.jpg')">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <h1>Creative Paints<br><span>Expressive liveries & bold color work</span></h1>
+        <p class="lead">A challenge for the most creative painters — show off your textures and style.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="https://wa.me/27842162391" target="_blank" rel="noopener noreferrer">Submit Your Paint</a>
+          <a class="btn ghost" href="community.html">Back to Challenges</a>
+        </div>
+      </div>
+    </section>
+
+    <main class="section">
+      <div class="container">
+        <div class="grid cols-3">
+          <div class="card">
+            <h3>Entry Requirements</h3>
+            <ul class="muted small-list">
+              <li>Attach high-quality screenshots.</li>
+              <li>Explain your concept (one sentence).</li>
+              <li>No offensive content.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Tips</h3>
+            <ul class="muted small-list">
+              <li>Use contrasting colors for impact.</li>
+              <li>Think about camera angles for the final shot.</li>
+              <li>Include close-ups for detail.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Submit</h3>
+            <p class="muted">Send your entry via WhatsApp (include name + in-game tag + images).</p>
+            <a class="btn primary" href="https://wa.me/27842162391" target="_blank" rel="noopener noreferrer">Send via WhatsApp</a>
+          </div>
+        </div>
+
+        <section style="margin-top:1.4rem;">
+          <h3>Ideas Gallery</h3>
+          <div class="gallery">
+            <div class="thumb" style="background-image:url('images/paint1.jpg')" onclick="openImageLightbox('images/paint1.jpg')"></div>
+            <div class="thumb" style="background-image:url('images/paint2.jpg')" onclick="openImageLightbox('images/paint2.jpg')"></div>
+            <div class="thumb" style="background-image:url('images/paint3.jpg')" onclick="openImageLightbox('images/paint3.jpg')"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© <span id="year-creative"></span> KasicarLovers — All rights reserved</div>
+        <div class="foot-links"><a href="https://wa.me/27842162391" target="_blank" rel="noopener noreferrer">Contact</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
